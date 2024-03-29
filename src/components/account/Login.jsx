@@ -2,7 +2,7 @@ import { Box, TextField, Button, styled, Typography } from "@mui/material";
 import { useState, useContext } from "react";
 import { loginUser, signupUser } from "../../service/api";
 import { DataContext } from "../../context/DataProvider";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Styles~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -186,9 +186,11 @@ const Login = ({ setIsAuthenticated }) => {
               label="password"
               variant="filled"
             />
-            <Button1 onClick={() => handleSignupButton()} variant="contained">
-              Sign Up
-            </Button1>
+            <Link to="/">
+              <Button1 onClick={() => handleSignupButton()} variant="contained">
+                Sign Up
+              </Button1>
+            </Link>
             <Text style={{ textAlign: "center" }}>OR</Text>
             <Button2
               onClick={() => setToggleLogin(true)}
