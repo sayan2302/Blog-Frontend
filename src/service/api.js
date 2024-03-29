@@ -1,7 +1,8 @@
 import axios from "axios";
 import { getAccessToken } from "../utils/common-utils";
 
-const Backend_URL = "http://localhost:8000";
+// const Backend_URL = "http://localhost:8000";
+const Backend_URL = "https://blog-backend-2eyh.onrender.com";
 
 const getAxiosConfig = () => {
   return {
