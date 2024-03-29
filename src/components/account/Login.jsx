@@ -96,7 +96,7 @@ const Login = ({ setIsAuthenticated }) => {
       })
       .then(() => {
         setSignupValues({ fullname: "", username: "", password: "" });
-        navigate("/");
+        setToggleLogin(true)
       });
   };
   const handleLoginValues = (e) => {
