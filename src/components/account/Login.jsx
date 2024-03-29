@@ -96,6 +96,7 @@ const Login = ({ setIsAuthenticated }) => {
       })
       .then(() => {
         setSignupValues({ fullname: "", username: "", password: "" });
+        navigate("/");
       });
   };
   const handleLoginValues = (e) => {
@@ -186,11 +187,11 @@ const Login = ({ setIsAuthenticated }) => {
               label="password"
               variant="filled"
             />
-            <Link to="/">
-              <Button1 onClick={() => handleSignupButton()} variant="contained">
-                Sign Up
-              </Button1>
-            </Link>
+
+            <Button1 onClick={() => handleSignupButton()} variant="contained">
+              Sign Up
+            </Button1>
+
             <Text style={{ textAlign: "center" }}>OR</Text>
             <Button2
               onClick={() => setToggleLogin(true)}
