@@ -139,7 +139,7 @@ const Post = ({ post }) => {
   };
 
   return (
-    <StyledLink to={`details/${post._id}`}>
+    <StyledLink to={`/home/details/${post._id}`}>
       <Container>
         <Image src={post.picture} alt="blog" />
         <Category textcolor={colorCodes[post.categories]}>

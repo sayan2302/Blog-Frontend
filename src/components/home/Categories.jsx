@@ -55,7 +55,7 @@ const Categories = () => {
             onClick={() => categorySelect("All")}
             variant={clicked.includes("All") ? "contained" : "outlined"}
           >
-            <StyledLink to="/">All</StyledLink>
+            <StyledLink to="/home">All</StyledLink>
           </StyledButton>
 
           {categories.map((category) => (
@@ -66,7 +66,7 @@ const Categories = () => {
               }
               onClick={() => categorySelect(category.type)}
             >
-              <StyledLink to={`/?category=${category.type}`}>
+              <StyledLink to={`/home/?category=${category.type}`}>
                 {category.type}
               </StyledLink>
             </StyledButton>

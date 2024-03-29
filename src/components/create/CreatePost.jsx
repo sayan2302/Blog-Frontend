@@ -136,7 +136,7 @@ const CreatePost = () => {
     await uploadPost(post)
       .then((res) => {
         if (res.status) {
-          navigate("/");
+          navigate("/home");
         }
       })
       .catch((err) => alert(err.response.data));

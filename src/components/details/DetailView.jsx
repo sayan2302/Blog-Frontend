@@ -227,7 +227,7 @@ const DetailView = () => {
     await deletePostById(id)
       .then((res) => {
         if (res.status === 200) {
-          navigate("/");
+          navigate("/home");
         }
       })
       .catch((err) => {

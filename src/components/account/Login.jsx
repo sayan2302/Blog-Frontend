@@ -110,7 +110,7 @@ const Login = ({ setIsAuthenticated }) => {
           `Bearer ${res.data.refreshToken}`
         );
         setAccount({ name: res.data.name, username: res.data.username });
-        navigate("/");
+        navigate("/home");
         setIsAuthenticated(true);
       })
       .catch((err) => console.log(err.response.data));

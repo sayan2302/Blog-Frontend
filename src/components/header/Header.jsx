@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <Component>
       <Container>
-        <Hyperlink to="/">HOME</Hyperlink>
+        <Hyperlink to="/home">HOME</Hyperlink>
         <Hyperlink to="/about">ABOUT</Hyperlink>
         <Hyperlink to="/contact">CONTACT</Hyperlink>
         <Hyperlink to="/login">LOGOUT</Hyperlink>

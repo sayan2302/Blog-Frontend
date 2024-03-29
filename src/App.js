@@ -38,16 +38,22 @@ function App() {
             <Routes>
               {
                 <Route
+                  path="/"
+                  element={<Login setIsAuthenticated={setIsAuthenticated} />}
+                />
+              }
+              {
+                <Route
                   path="/login"
                   element={<Login setIsAuthenticated={setIsAuthenticated} />}
                 />
               }
               {
                 <Route
-                  path="/"
+                  path="/home"
                   element={<PrivateRoute isAuthenticated={isAuthenticated} />}
                 >
-                  <Route path="/" element={<Home />} />
+                  <Route path="/home" element={<Home />} />
                 </Route>
               }
               {
@@ -60,10 +66,10 @@ function App() {
               }
               {
                 <Route
-                  path="/details/:id"
+                  path="/home/details/:id"
                   element={<PrivateRoute isAuthenticated={isAuthenticated} />}
                 >
-                  <Route path="/details/:id" element={<DetailView />} />
+                  <Route path="/home/details/:id" element={<DetailView />} />
                 </Route>
               }
               {
