@@ -23,7 +23,7 @@ const PrivateRoute = ({ isAuthenticated, ...props }) => {
       <Outlet />
     </>
   ) : (
-    <Navigate replace to="/login" />
+    <Navigate replace to="/" />
   );
 };
 
@@ -39,12 +39,6 @@ function App() {
               {
                 <Route
                   path="/"
-                  element={<Login setIsAuthenticated={setIsAuthenticated} />}
-                />
-              }
-              {
-                <Route
-                  path="/login"
                   element={<Login setIsAuthenticated={setIsAuthenticated} />}
                 />
               }
