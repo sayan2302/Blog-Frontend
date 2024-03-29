@@ -37,7 +37,7 @@ const Header = () => {
         <Hyperlink to="/home">HOME</Hyperlink>
         <Hyperlink to="/about">ABOUT</Hyperlink>
         <Hyperlink to="/contact">CONTACT</Hyperlink>
-        <Hyperlink to="/login">LOGOUT</Hyperlink>
+        <Hyperlink to="/">LOGOUT</Hyperlink>
       </Container>
     </Component>
   );
